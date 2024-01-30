@@ -29,8 +29,7 @@ public class CreditCardReader {
 			while(scanner.hasNextLine()) {
 				String creditCardNumber = scanner.nextLine();
 				
-				creditCardNumber = creditCardNumber.replace(" ", "");
-				creditCardNumber = creditCardNumber.replace("-", "");
+				creditCardNumber = creditCardNumber.replaceAll("[^\\d?]", "");
 				
 				numberList.add(creditCardNumber);
 				
