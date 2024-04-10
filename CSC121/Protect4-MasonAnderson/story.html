@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- story.html    By: Mason Anderson -->
+<!-- This page contains project 4.A -->
+<html>
+<head>
+	
+	<title>Mason's Story Time</title>
+	
+	<script>
+		function generateStory () {
+			outputDiv.innerHTML = '<p>On a ' + adjective.value + ' kind of day in the winter, ' + name1.value + ' went into town. They decided to take their ' + vehicle.value + ' to get there. Upon arrival, ' + name1.value + ' saw their friend and decided to ' + verb.value + ' her. </p>' + '<p>They then walked together and went into the ' + colors.value + ' store. Inisde the store was a massive ' + animal.value + ' that scared them both. ' + name1.value + ' decided to go home after that in their ' + vehicle.value + '. </p>'
+		}
+
+		function reset () {
+			outputDiv.innerHTML = '<p>On a <b>(adjective)</b> kind of day in the Winter, <b>(name)</b> went into town. They decided to take their <b>(vehicle)</b> to get there. Upon arrival, <b>(name)</b> saw their friend and decided to <b>(verb)</b> her.</p>' + '<p>They then walked together and went into the <b>(color) </b> store. Inisde the store was a massive <b>(animal)</b> that scared them both. <b>(Name)</b> decided to go home after that in their <b>(vehicle)</b>.</p>'
+		}
+	</script>
+</head>
+<body>
+
+<h1 style="text-align: center;">Mason's Story Time</h1> <hr>
+
+<table>
+	<tr>
+		<td>An adjective:</td>  <td><input type="text" id="adjective" size="25" value=""></td>
+	</tr>
+
+	<tr>
+		<td>A name:</td>  <td><input type="text" id="name1" size="25" value=""></td>
+	</tr>
+
+	<tr>
+		<td>A color:</td>  <td><input type="text" id="colors" size="25" value=""></td>
+	</tr>
+
+	<tr>
+		<td>Type of animal:</td>  <td><input type="text" id="animal" size="25" value=""></td>
+	</tr>
+
+	<tr>
+		<td>A verb:</td>  <td><input type="text" id="verb" size="25" value=""></td>
+	</tr>
+
+	<tr>
+		<td>Type of vehicle:</td>  <td><input type="text" id="vehicle" size="25" value=""></td>
+	</tr>
+
+</table>
+
+
+<button onclick="generateStory ();">Click for Story</button>
+<button onclick="reset();">Click to Reset</button> <hr>
+
+<div id="outputDiv">
+	<p>
+	On a <b>(adjective)</b> kind of day in the Winter, <b>(name)</b> went into town. They decided to take their <b>(vehicle)</b> to get there. Upon arrival, <b>(name)</b> saw their friend and decided to <b>(verb)</b> her.
+	</p>
+
+	<p>
+	They then walked together and went into the <b>(color) </b> store. Inisde the store was a massive <b>(animal)</b> that scared them both. <b>(Name)</b> decided to go home after that in their <b>(vehicle)</b>.
+	</p>
+</div>
+
+
+</body>
+</html>
