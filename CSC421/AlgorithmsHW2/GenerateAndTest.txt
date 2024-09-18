@@ -1,0 +1,12 @@
+25 584
+26 1048
+27 1958
+28 4119
+29 7591
+30 16567
+31 30650
+32 66618
+
+As seen from the data above, my generate and test solution follow O(2^N) time efficiency. 2^N essential just means that for every
+N added, the time will double. This is seen above as 25 is 584, and 26 is 1048. This trend continues down the line, proving
+that my algorithm follows O(2^N) time efficiency. 
