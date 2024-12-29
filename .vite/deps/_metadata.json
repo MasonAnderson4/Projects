@@ -1,0 +1,15 @@
+{
+  "hash": "e0db4e42",
+  "configHash": "60110dde",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "05fe7679",
+  "optimized": {
+    "kaboom": {
+      "src": "../../2D-Portfolio/node_modules/kaboom/dist/kaboom.mjs",
+      "file": "kaboom.js",
+      "fileHash": "aceab327",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

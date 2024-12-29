@@ -16,7 +16,7 @@ export const dialogueData = {
     pc: `This is my PC. I built it myself and enjoy using it for playing games, 
     watching videos, doing school, and coding projects like this one. 
     <a href="https://github.com/MasonAnderson4/Projects/tree/master/weather-app" target="_blank">Here</a> you 
-    can find a repo of a recent weather app project I made using JavaScript 
+    can also find a repo of a recent weather app project I made using JavaScript 
     and React.`,
     links: `Here are some links to check out more about me and some of the work
     I have done. 
