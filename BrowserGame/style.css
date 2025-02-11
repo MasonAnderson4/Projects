@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./field.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+canvas {
+    border: 2px solid #000;
+    width: 90vw;
+    height: 85vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    cursor: url("./reticle.png") 16 16, auto;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+#score {
+    display: inline-block;
+    margin-left: 5px;
+}
