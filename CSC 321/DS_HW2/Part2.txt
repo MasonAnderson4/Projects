@@ -1,0 +1,109 @@
+Based on the they array queue approach being O(1) for add and peek, and O(N) for remove, it is expected that every time the 
+queue size doubles, the time would double as well because it is O(N). For the linked queue approach, it is expected that the time
+remains constant when the queue size doubles because it is O(1) for all operations. This was proved to be true in the data shown
+below, but note that it doesn't exactly double the time for the array queue, which is more on my computer and background 
+operations. It is also worth noting that once the queues get big enough it takes more than double for the array queue, which is
+also to blame on my computer and background operations.
+
+Queue size: 10000
+Double size until: 1000000
+Number of peak/add/remove operations: 1000
+ArrayQueue times:
+10000: 2
+20000: 2
+40000: 4
+80000: 10
+160000: 24
+320000: 45
+640000: 90
+LinkedQueue times:
+10000: 1
+20000: 0
+40000: 0
+80000: 0
+160000: 0
+320000: 0
+640000: 0
+
+Queue size: 5000
+Double size until: 500000
+Number of peak/add/remove operations: 500
+ArrayQueue times:
+5000: 1
+10000: 1
+20000: 2
+40000: 2
+80000: 7
+160000: 15
+320000: 29
+LinkedQueue times:
+5000: 1
+10000: 0
+20000: 0
+40000: 0
+80000: 0
+160000: 0
+320000: 0
+
+Queue size: 25000
+Double size until: 2500000
+Number of peak/add/remove operations: 2500
+ArrayQueue times:
+25000: 8
+50000: 13
+100000: 35
+200000: 70
+400000: 143
+800000: 280
+1600000: 764
+LinkedQueue times:
+25000: 1
+50000: 0
+100000: 0
+200000: 1
+400000: 0
+800000: 0
+1600000: 0
+
+Queue size: 25000
+Double size until: 7500000
+Number of peak/add/remove operations: 7500
+ArrayQueue times:
+25000: 21
+50000: 39
+100000: 103
+200000: 207
+400000: 421
+800000: 789
+1600000: 2840
+3200000: 22416
+6400000: 59984
+LinkedQueue:
+25000: 2
+50000: 0
+100000: 1
+200000: 0
+400000: 1
+800000: 0
+1600000: 0
+3200000: 0
+6400000: 0
+
+Queue size: 8500
+Double size until: 500000
+Number of peak/add/remove operations: 750
+ArrayQueue times:
+8500: 2
+17000: 1
+34000: 2
+68000: 6
+136000: 15
+272000: 29
+LinkedQueue times:
+8500: 0
+17000: 0
+34000: 0
+68000: 0
+136000: 0
+272000: 0
+
