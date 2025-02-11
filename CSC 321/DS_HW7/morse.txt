@@ -1,6 +1,0 @@
-inLetter . inLetter
-inLetter - inLetter
-inLetter _ betweenLetters
-inLetter __ betweenLetters
-betweenLetters . inLetter
-betweenLetters - inLetter
