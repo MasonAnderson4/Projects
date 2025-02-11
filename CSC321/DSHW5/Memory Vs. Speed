@@ -1,0 +1,31 @@
+ArrayList
+memory (MB): 6.287608
+time (sec): 9.972
+
+LinkedList
+memory (MB): 14.557584
+time (sec): 18.672
+
+TreeSet
+memory (MB): 17.462288
+time (sec): 0.005
+
+
+Looking at the data above, it does make sense. Looking at the difference in memory for them all, it makes sense why ArrayList
+is the lowest. This is because the data is stored in one continuous block of memory. LinkedList store data as nodes which point
+to previous and next nodes, which takes more memory to store, so it makes sense why it is higher. The TreeSet is the next highest,
+which makes sense because it creates a balanced binary search tree and maintains the balance, which takes more memory. The time 
+comparison also makes sense in this test. Both ArrayList and LinkedList contains method is O(n), but sense the ArrayList is one
+continuous block of memory, it will perform faster compared to the LinkedList with multiple blocks of memory with the nodes. The
+TreeSet time makes sense because being way lower than ArrayList and LinkedList because its contains method is O(log n).
+
+
+Trie
+memory (MB): 48.469848
+time (sec): 0.003
+
+These results do meet my expectations. It has more memory used than the other data structures because of each node having 26
+children, but not as bad as one would think due to the structure sharing between words that start with the same letters. 
+For example, dog doesn't take any additional storage because the word dogs exists. The time was also faster than the others, 
+which makes sense because the contains method is independent of the number of words stored and is O(h), with h being the length 
+of the word.
