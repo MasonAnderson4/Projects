@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- X3 Mateiral.html     By: Mason Anderson -->
+<!-- This page goes over the materials in chapter x3 -->
+<html>
+<head>
+
+	<title>X3 Materials</title>
+</head>
+<body>
+
+	<p id="firstP">
+		I am in CSC 121 right now.
+	</p>
+
+	<p id="secondP"> <!-- is like variable -->
+		It is a Wednesday morning and I am tired.
+	</p>
+
+	<img src="https://www.creighton.edu/sites/default/files/styles/navig/public/2021-12/1.jpg?itok=wpnpIKQb" alt="This is a picture of Creighton"  width="300" id="creightonImg"
+
+	onmouseover="creightonImg.width ='600'; secondP.style.color= 'red';"
+	onmouseout="creightonImg.width='300';"> <hr> <!-- changes size of picture when mouse is over it -->
+
+	<img src="https://cdn.britannica.com/77/89877-050-C8B16B06/Mount-Fuji.jpg" alt="Pic of mt. Fuji on map" width="300" id="mtFuji"
+
+	onmouseover="mtFuji.src='https://www.tripsavvy.com/thmb/P4F1v4IhhE_htdNhwNTPw0iMos4=/2576x2576/smart/filters:no_upscale()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg'; mtFuji.width='300';"
+	onmouseout="mtFuji.src='https://cdn.britannica.com/77/89877-050-C8B16B06/Mount-Fuji.jpg'; mtFuji.width='300';"> <!-- this changes the image when you go over the image -->
+	<p>
+		<button onclick="firstP.innerHTML='Hello'; outputDiv.innerHTML = '<p> Can change the button I think </p>';"><img src="https://cdn.britannica.com/77/89877-050-C8B16B06/Mount-Fuji.jpg" alt="Pic of mt. Fuji on map" width="300"></button> <!-- this is how you add button and have it change elemets, also made it so the button itself is an image -->
+	</p>
+
+		<div id="outputDiv">
+			
+		</div>
+
+</body>
+</html>

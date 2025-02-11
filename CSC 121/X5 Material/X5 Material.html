@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- X5 material.html     By: Mason Anderson -->
+<!-- This page contains x5 materials -->
+<html>
+<head>
+	
+	<title>X5 Material</title>
+<!-- floor is used to get interger. toFixed is for how many decimals you want. pow is used to square (second value after comma is what power it is raised to). / can be used to make appostraphe usable in a string -->
+	<script>
+		function generateText(){
+			name = nameBox.value;
+			age = ageBox.valueAsNumber;
+
+			squareOfAge = Math.pow(age,2); 
+			luckyNumber = Math.floor(1 + Math.random() * 10);
+			luckyRealNumber = (1 + Math.random() * 10)
+
+			replace.innerHTML = 'Hi my name is ' + name + ' and I am ' + age + ' years old.'  + ' The square of my age is ' + squareOfAge + '. My lucky number is ' + luckyNumber + '.' + ' My real lucky number is ' + luckyRealNumber.toFixed(2) + '.';
+
+		}
+	</script>
+</head>
+<body>
+
+	<p>
+		Pleaser enter your name:
+		<input type="text" id="nameBox" size="25" value="">
+	</p>
+
+	<p>
+		Please enter your age:
+		<input type="number" id="ageBox" min="0" max="120" value="">
+	</p> <hr>
+
+	<button onclick="generateText();">Click to generate new text</button>
+
+	<p id="replace">
+		This text will be replaced when we click the button above
+	</p>
+
+</body>
+</html>

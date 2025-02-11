@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- x8 materials.html    By: Mason Anderson -->
+<html>
+<head>
+	<title>X8 Materials</title>
+	<script src="https://www.compsciconcepts.com/random.js"></script>
+	<script>
+		function throwADice(){
+			desiredNumberOfThrow = numBox.valueAsNumber;
+			currentNumberOfThrow = 0;
+			countingFace6 = 0;
+			while(currentNumberOfThrow < desiredNumberOfThrow){
+				diceFace = RandomInt(1,6);
+
+				outputP.innerHTML = outputP.innerHTML + 'You got a ' + diceFace + '<br>';
+
+				currentNumberOfThrow = currentNumberOfThrow + 1;
+
+				if (diceFace == 6) {
+					countingFace6 = countingFace6 + 1;
+
+				}//closing if statement
+
+			}//closing while loop
+
+			outputSpan.innerHTML = countingFace6;
+
+		}//closing function
+
+	</script>
+</head>
+<body>
+
+<p>Please enter the number of times you want to throw a dice <input type="number" id="numBox" value="10" min="0"></p> 
+
+<button onclick="throwADice();">Click to throw Dice!</button>
+<hr>
+
+<p id="outputP"></p>
+
+<p>The number of times you got a 6 is: <span id="outputSpan"></span></p>
+
+</body>
+</html>

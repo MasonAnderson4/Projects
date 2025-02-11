@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- test2Topics.html           By: Samer Al-khateeb --> 
+<!-- A page that demonstrate most of Test 2 concepts -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test 2 Topics</title>
+	
+	<script type="text/javascript" src="http://compsciconcepts.com/random.js"></script>
+	
+	<script type="text/javascript">
+
+        //function will be called from the start() function 
+        //to pick a random answer and show it on the screen
+		function randomText(){
+			answer = RandomOneOf(['Yes', 'No', 'Maybe', 'Not Sure']);
+			outputP2.innerHTML = answer;
+	     }
+
+	    //function to sum any two numbers passed to 
+        //it as parameters (inputs) and return the output
+		function calculate(a,b){
+			//res = a + b;
+			//return res;
+			return a + b;
+
+		 }
+
+	    //the first function that will be called when 
+	    //the user click the button
+		function start(){
+			//valueAsNumber is used with a number box
+			x = firstNum.valueAsNumber;
+			y = secondNum.valueAsNumber;
+			
+			// calling calculate() function
+			result = calculate(x,y);
+
+			outputP1.innerHTML = result;
+
+			// calling randomText function
+			randomText();
+			
+			// the Number() function is used with counters to convert a string into a number
+			countSpan.innerHTML = Number(countSpan.innerHTML) + 1;
+
+			//added this if else statment to check whether the numbers are the same or bigger or smaller than each other. 
+			if (x == y){
+				        outputP3.innerHTML = 'The first number ' + x + ' and the second number ' + y + ' are equal.';
+			           }
+			else if (x > y){
+				         outputP3.innerHTML = 'The first number ' + x + ' is greater than the second number ' + y + '.';
+			             }
+
+			else {
+				    outputP3.innerHTML = 'The first number ' + x + ' is less than the second number ' + y + '.';
+			     }
+
+		}
+
+
+	</script>
+
+
+</head>
+<body>
+
+	<p>Enter the first number: <input type="number" id="firstNum" value="20" min="0" max="100"></p>
+
+	<p>Enter the second number: <input type="number" id="secondNum" value="20" min="0" max="100"></p>
+
+	<button onclick="start();"> Click to sum the numbers</button>
+
+	<p id="outputP1"></p>
+
+	<p id="outputP2"></p>
+
+	<p> The number of times you clicked the button is: <span id="countSpan">0</span> </p>
+
+
+	<p id="outputP3"></p>
+
+
+</body>
+</html>

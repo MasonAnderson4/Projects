@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- X7 Materials.html       By: Mason Anderson
+	This page contains the contents of X7 -->
+<html>
+<head>
+	
+	<title>X7 Materials</title>
+
+	<script>
+		function calGrade(){
+
+			insertedGrade = grade.valueAsNumber;
+
+			gradesCount.innerHTML = Number(gradesCount.innerHTML) + 1;
+
+			if (insertedGrade >= 90  &&  insertedGrade < 97) {
+
+				gradesACount.innerHTML = Number(gradesACount.innerHTML) + 1;
+
+			}
+			else if (insertedGrade >= 80 && insertedGrade < 90) {
+
+				gradesBCount.innerHTML = Number(gradesBCount.innerHTML) + 1;
+			}
+			else if (insertedGrade >= 70 && insertedGrade <80) {
+				gradesCCount.innerHTML = Number(gradesCCount.innerHTML) + 1;
+
+			}
+			else if (insertedGrade >= 97 && insertedGrade <= 100) {
+				gradesAplusCount.innerHTML = Number(gradesAplusCount.innerHTML) + 1;
+
+			}
+			else {
+				gradesFCount.innerHTML = Number(gradesFCount.innerHTML) + 1;
+
+			}
+
+		}
+
+		function resetCounts(){
+			gradesCount.innerHTML = 0;
+			gradesAplusCount.innerHTML = 0;
+			gradesACount.innerHTML = 0;
+			gradesBCount.innerHTML = 0;
+			gradesCCount.innerHTML = 0;
+			gradesFCount.innerHTML = 0;
+
+
+		}
+	</script>
+
+</head>
+<body>
+
+<h1>Chapter X7 Concepts</h1>
+
+<p><input type="number" id="grade" value="90" min="0" max="100"></p>
+<hr>
+
+<button onclick="calGrade();">Calculate</button>
+<button onclick="resetCounts();">Reset</button>
+
+<h2>Stats:</h2>
+<p>The number of grades inserted is: <span id="gradesCount">0</span></p>
+<p>The number of As inserted is: <span id="gradesACount">0</span></p>
+<p>The number of A+ inserted is: <span id="gradesAplusCount">0</span></p>
+<p>The number of B inserted is: <span id="gradesBCount">0</span></p>
+<p>The number of C inserted is: <span id="gradesCCount">0</span></p>
+<p>The number of F inserted is: <span id="gradesFCount">0</span></p>
+
+
+</body>
+</html>

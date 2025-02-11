@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- gallery.html  By: Mason Anderson -->
+<!-- This is project 3.A about the photo gallery. --> 
+<html>
+<head>
+	
+	<title>Photo Gallery</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Mason's Photo Gallery</h1>
+
+<p style="text-align: center;">
+	<img src="https://content.api.news/v3/images/bin/19baaccb3d706775bb9c3bbe2f946bb3?width=1044" alt="This is a picture of Mt.Fuji." width="500" id="mtFuji"
+
+	onmouseover="mtFuji.width ='1000';"
+	onmouseout="mtFuji.width = '500';">
+
+
+</p>
+
+<p style="text-align: center; font-size: 115%;" id="description">
+	A picture of Mt.Fuji in Japan.
+</p>
+
+<p style="text-align: center;">
+	<button onclick="mtFuji.src = 'https://content.api.news/v3/images/bin/19baaccb3d706775bb9c3bbe2f946bb3?width=1044'; description.innerHTML = 'A picture of Mt.Fuji in Japan.';">Mt.Fuji</button>
+	<button onclick="mtFuji.src = 'https://boutiquejapan.com/wp-content/uploads/2019/05/Deer-Kasuga-Taisha-Nara-Japan-scaled.jpg'; description.innerHTML = 'A picture of the Nara deer in Nara, Japan.';">Nara</button>
+	<button onclick="mtFuji.src = 'http://baltimoreoutloud.com/wp/wp-content/uploads/2021-12-19-Tokyo-Courtesy-Tokyo-travel-Guide.jpg'; description.innerHTML = 'A picture of Tokyo in Japan.';">Tokyo</button>
+	<button onclick="mtFuji.src = 'https://a.cdn-hotels.com/gdcs/production57/d1303/d2e23b72-3a6a-40b8-822b-66dfd1995e29.jpg'; description.innerHTML = 'A picture of Osaka in Japan.';">Osaka</button>
+</p>
+
+</body>
+</html>

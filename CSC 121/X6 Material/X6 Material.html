@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- X6 material     By: Mason Anderson -->
+<!-- this page covers chapter x6 materials -->
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	
+	<title>X6 Materials</title>
+
+
+	<script src="X6Functions.js"></script>
+
+	<script src="http://compsciconcepts.com/random.js"></script>
+
+	<script>
+
+		
+
+		function start(){
+			num1 = firstNum.valueAsNumber;
+			num2 = secondNum.valueAsNumber;
+
+			thesum = the_sum_function(num1, num2);
+			thediff = the_diff_function(num1, num2);
+			themulti = the_multi_function(num1, num2);
+			thediv = the_div_function(num1, num2);
+
+			
+
+			results1.innerHTML = "The result of adding these two numbers is " + thesum;
+			results2.innerHTML = "The result of subtracting these two numbers is " + thediff;
+			results3.innerHTML = "The result of multiplying these two numbers is " + themulti;	
+			results4.innerHTML = "The result of dividing these two numbers is " + thediv;
+		}
+
+		function imagePicker(){
+
+			x = RandomOneOf(["download", "download-1", "download-2"]);
+
+			picture.src = x + ".jpg";
+
+		}
+	</script>
+</head>
+<body>
+	<p>Please enter the first number: <input type="number" id="firstNum" min="0" max="100" value="20"> </p>
+	<p>Please enter the second number: <input type="number" id="secondNum" min="0" max="100" value="20"> </p>
+
+	<button onclick="start();">Calculate</button>
+	<button onclick="imagePicker();">Pick a Random Image</button>
+
+	<p id="results1"></p>
+	<p id="results2"></p>
+	<p id="results3"></p>
+	<p id="results4"></p>
+
+	<img src="download.jpg" id="picture">
+
+
+</body>
+</html>

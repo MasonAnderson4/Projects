@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- x4 mateiral   By: Mason Anderson -->
+<!-- this page goes over x4 material -->
+<html>
+<head>
+	
+	<title>X4 material</title>
+	<script>
+		function generateAnEmail () {
+			outputEmail.innerHTML = '<p>Dear ' + name1.value + ', can you come to my ' + event1.value + ' which will be next week on ' + day.value +'? </p>' + '<p> Best, Mason </p>';
+			meow.width = '500';
+		}
+
+		function clearTheText() {
+			outputEmail.innerHTML = '';
+		}
+	</script>  <!-- way to seperate java and HTML -->
+</head>
+<body>
+<h1 style="text-align: center;">
+	This page is used to create an email!
+</h1>
+
+<img id = "meow" src="https://media.npr.org/assets/img/2022/07/13/ap22194581263412_wide-9d28339e3bfa5b9f98d847e863006a40896fa08a.jpg?s=1400" alt="meow, used to clear text" width="250" onclick="clearTheText();">
+
+
+<p>
+	Plaese enter a name
+	<input type="text" id="name1" size="25" value=""> 
+</p> <!-- this is id for inserting name -->
+
+<p>
+	Plaese enter an event
+	<input type="text" id="event1" size="25" value=""> 
+</p>
+
+<p>
+	Plaese enter a day
+	<input type="text" id="day" size="25" value=""> 
+</p> <hr>
+
+<button onclick="generateAnEmail();">Click to generate the email</button> <!-- function tag put it to make it work -->
+
+<button onclick="alert('This is an alert text');">Click to show an alert</button> <!-- displays an alert -->
+<hr>
+
+<div id="outputEmail">
+	Dear ____, can you come to my ___ which will be next week on ___?
+</div>
+
+
+</body>
+</html>
